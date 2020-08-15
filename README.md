@@ -14,10 +14,9 @@ Le5le-topology is a diagram visualization framework uses canvas and typescript. 
 
 ![topology](https://img2018.cnblogs.com/blog/328506/201909/328506-20190904144733715-530893726.png)
 
-
 # VS Code extension
-[VS Code extension](https://marketplace.visualstudio.com/items?itemName=Alsmile.le5le-topology-plugin)
 
+[VS Code extension](https://marketplace.visualstudio.com/items?itemName=Alsmile.le5le-topology-plugin)
 
 # Why le5le-topology
 
@@ -26,24 +25,14 @@ Le5le-topology is a diagram visualization framework uses canvas and typescript. 
 - Animate
 - TypeScript
 
-# Source
-
-```
-- libs
-  |- topology  // The topogoly-core lib source.
-- src  // The topology.le5le.com source that uses angular.
-- bundle
-- demo // The demo uses js.
-```
-
 # Getting Started
 
 ## typescrypt/es6
 
 ```
-import { Topology } from 'topology-core';
+import { Topology } from '@topology/core';
 
-var canvas = new Topology('topo-dom', options);
+var canvas = new Topology('topology-dom', options);
 canvas.open(data);
 
 ```
@@ -53,7 +42,7 @@ canvas.open(data);
 ```
 <script src="/bundle/topology.bundle.js"></script>
 
-var canvas = new Le5leTopology.Topology('topo-canvas', {});
+var canvas = new Le5leTopology.Topology('topology-dom', options);
 canvas.open(data);
 
 ```
@@ -67,54 +56,18 @@ canvas.open(data);
 # Development
 
 ```
+// Monorepos + yarn workspaces
 $ yarn
-$ npm start
+$
 
-# build
-$ npm run build
-
-```
-
-## http proxy on localhost
+// build
+$ yarn build
 
 ```
-# First, set your host: 127.0.0.1 local.dev.le5le.com
-$ npm run dev
-```
-
-## http proxy on topology.le5le.com
-
-```
-# First, set your host: 127.0.0.1 local.le5le.com
-$ npm run prod
-```
-
-## Topology-core lib
-
-```
-[libs/topology#] yarn
-
-# build
-[libs/topology#] npm run build
-
-```
-
-## Topology-flow-diagram lib
-
-```
-[libs/topology-flow-diagram#] yarn
-
-# build
-[libs/topology-flow-diagram#] npm run build
-
-```
-
-## Make your diagrams
-
-[→ Reference](https://github.com/le5le-com/topology/tree/master/libs/topology-flow-diagram/display)
 
 # Contributors
 
+- [hudeyi](https://github.com/deyihu)
 - [Nickbing Lao](https://github.com/giscafer)
 - [ivanZzzz](https://github.com/ivan135)
 - [johnnyhhj](https://github.com/johnnyhhj)
@@ -143,6 +96,9 @@ Email: alsmile123@qq.com
 - 汇客互动
 - 重庆环投生态环境监测网络与工程治理有限公司
 - 恒安嘉新（北京）科技股份公司
+- 北京翌普信息科技有限公司
+- 天津辰思科技
+- 上海层峰
 
 # License
 

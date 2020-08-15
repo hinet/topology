@@ -5,6 +5,7 @@ dist/
 tmp/
 out-tsc/
 **/topology.bundle.js
+**/bundle/demo/index.js
 
 # dependencies
 node_modules/
@@ -30,7 +31,7 @@ node_modules/
 /connect.lock
 /coverage
 /libpeerconnection.log
-npm-debug.log
+*-debug.log
 yarn-error.log
 testem.log
 /typings
